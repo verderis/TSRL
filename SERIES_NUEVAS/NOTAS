@@ -1,0 +1,14 @@
+############ SERIES BOSQUE ############
+Las series tienen de largo 430 fechas
+Para hacerlas se seleccionaron aquellos píxeles que no estaban deforestados hasta finales del 2017 (a partir de la máscara del ministerio.)
+La división es 50 y 50 para entrenamiento y validación
+Cuidado que la serie de tiempo puede seguir un poco más que esa fecha, y por lo tanto haber un quiebre posterior.
+
+
+############ SERIES DEFORESTACION ############
+Las series tienen de largo 430 fechas. Tienen además lat, lon, sitio, anio,mes, nubes.
+El formato es bastnate distinto, está orientado a Pandas.
+Para levantarlas se seleccionaron aquellos píxeles que fueron deforestados, de ahi cuales supuestamente eran bosque y estos útlimos fueron inflados. Queremos solo aquella deforestación "pura".
+La división entre entrenamiento y validacion es de 80/20
+
+
